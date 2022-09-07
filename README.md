@@ -2,13 +2,15 @@
 Update for https://github.com/primex-finance/ETHWarsaw_2022
 
 ## Первая версия контракта: создание массива, тестовые транзакции, анализ
+
+Берем оригинал контракта. Делаем легкие правки для onchain/offchain анализа.
+
 Вот контракт
 0xce36a4D2208Cf4Dd7fE32baA29cC7DA9b7137a69
 транзакция создания
 https://mumbai.polygonscan.com/tx/0x1f73b4ae87e6a8e6e14932192229f54d5c05e886811b35ec28f88f1e7d179d64
 добавил логов, их всего 505
 По нему видно у кого какой isClosable
-
 
 Создался массив из 100 значений
 
@@ -54,4 +56,12 @@ elementsId 125
 elementLength 104
 
 ## Вторая версия контракта: сокращение операции для кипера, перенос в контракт. Добавление просто защиты от лавинообразных транзакций
+
+Меняем в closeElements входящие переменные с массива на курсор. Или нет, без параметров делаем и создаем cursorGlobal.
+
+Делаем деплой
+https://mumbai.polygonscan.com/address/0x29E83F173D29A2cdD61B9367B0739eF026082581#code
+
+Массив из 100 элементов создан.
+Он в файле contracts/ElementManager_v02.deploy.isClosable.txt
 
