@@ -65,7 +65,10 @@ elementLength 104
 https://mumbai.polygonscan.com/address/0x29E83F173D29A2cdD61B9367B0739eF026082581#code
 
 Массив из 100 элементов создан.
-Он в файле https://github.com/lxgn/primex-hackathon-2022-09/blob/main/contracts/ElementManager_v02.deploy.isClosable.txt
+Он во вкладке логов в polygonscan.com 
+https://mumbai.polygonscan.com/tx/0x07fc2323f464637cc1093dac26f64598118c4da768ee2a5f4650787987ebc09d#eventlog
+и 
+в файле https://github.com/lxgn/primex-hackathon-2022-09/blob/main/contracts/ElementManager_v02.deploy.isClosable.txt
 
 Также в контракте появилась функция needProcess()
 Результат которой показывает необходимость дергать кипером функцию.
